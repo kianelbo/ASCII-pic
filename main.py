@@ -10,7 +10,7 @@ ap.add_argument("-t", "--txt", action='store_true', help="also save as text")
 ap.add_argument("-o", "--output", default='output', help="output file")
 args = vars(ap.parse_args())
 
-pic = Picture(args["filename"], args["resolution"])
+pic = Picture(args["input"], args["resolution"])
 
 pic.generate()
 
